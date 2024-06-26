@@ -33,6 +33,8 @@ def main():
     for arquivo_info in config["arquivos"]:
         pasta_origem = arquivo_info["pasta"]
         arquivo_origem = arquivo_info["arquivo"]
+
+        print(pasta_origem)
         
         if arquivo_origem:
             nome_arquivo_zip = f"{datetime.now().strftime('%Y%m%d')}_{sub_nome}_{os.path.splitext(arquivo_origem)[0]}.zip"
